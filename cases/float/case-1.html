@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+ 
+		<title>CSSimple</title>
+
+		<link type="text/css" rel="stylesheet" href="../../css/demo.css" />
+		<link type="text/css" rel="stylesheet" href="../../dist/css/jquery.mmenu.all.css" />
+		<link rel="stylesheet" href="../../codemirror/codemirror.css">
+		<link rel="stylesheet" href="../../codemirror/theme/pastel-on-dark.css">
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.js"></script>
+		<script type="text/javascript" src="../../dist/js/jquery.mmenu.all.min.js"></script>
+		<script src="../../codemirror/codemirror.js"></script>
+		<script src="../../codemirror/mode/css/css.js"></script>
+
+
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="page">
+			<div class="header">
+				<a href="#menu"><span></span></a>
+				<h1>CSSimple</h1>
+				<div class="breadcrumbs">
+					<span>Flujo > <a href="case-1.html">#1</a></span>
+				</div>
+				<a class="breadcrumbs" href="#menu"><span></span></a>
+			</div>
+			<div class="content">
+			<h3 class="subtitle"><span>#1<a class="right" href="case-2.html">></a></span>Flujo - Float</h3>
+<div class="column column-1">
+<div class="float-div case case-1">
+	<div class="row div-number div-number-1 case-1-1">
+		<div class="active-div div div-1 float float-1"></div>
+		<div class="active-div div div-2 float float-2"></div>
+		<div class="active-div div div-3 float float-3"></div>
+	</div>
+	<div class="row div-number div-number-2 case-1-2">
+		<div class="active-div div div-1 float float-1"></div>
+		<div class="active-div div div-2 float float-2"></div>
+		<div class="active-div div div-3 float float-3"></div>
+	</div>	
+</div> 
+</div>
+<div class="column column-2">
+<div class="float-div case case-1">
+	<div class="row div-number div-number-3 case-1-3">
+		<div class="active-div div div-1 float float-1"></div>
+		<div class="active-div div div-2 float float-2"></div>
+		<div class="active-div div div-3 float float-3"></div>
+	</div>
+	<div class="row div-number div-number-4 case-1-4">
+		<div class="active-div div div-1 float float-1"></div>
+		<div class="active-div div div-2 float float-2"></div>
+		<div class="active-div div div-3 float float-3"></div>
+	</div>
+	<div class="row div-number div-number-5 case-1-5">
+		<div class="active-div div div-1 float float-1"></div>
+		<div class="active-div div div-2 float float-2"></div>
+		<div class="active-div div div-3 float float-3"></div>
+	</div>
+</div>
+</div>
+<form class="unicode"><textarea id="code1" name="code">
+/*#1*/
+.float-div.case-1 .case-1-1 .active-div.float {
+
+}
+
+/*#2*/
+.float-div.case-1 .case-1-2 .active-div.float {
+    float: left;
+}
+
+/*#3*/
+.float-div .case-1-3 .active-div.float-1{
+	float: right;
+}
+.float-div .case-1-3 .active-div.float-2{
+	float: left;
+}
+.float-div .case-1-3 .active-div.float-3{
+	float: left;
+}
+
+/*#4*/
+.float-div .case-1-4 .active-div.float-1{
+	float: left;
+}
+.float-div .case-1-4 .active-div.float-2{
+	float: right;
+}
+.float-div .case-1-4 .active-div.float-3{
+	float: left;
+}
+
+/*#5*/
+.float-div .case-1-5 .active-div.float-1{
+	float: left;
+}
+.float-div .case-1-5 .active-div.float-2{
+	float: left;
+}
+.float-div .case-1-5 .active-div.float-3{
+	float: right;
+}</textarea></form>
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><span>Flujo</span>
+						<ul>
+							<li><a href="case-1.html">Caso 1 - Float</a></li>
+							<li><a href="case-2.html">Caso 2 - Display</a></li>
+							<li><a href="case-3.html">Caso 3 - Height</a></li>
+						</ul>
+					</li>
+					<li><span>Centrar div</span>
+						<ul>
+							<li><a href="../center-div/case-4.html">Caso 4</a></li>
+							<li><a href="../center-div/case-5.html">Caso 5</a></li>
+							<li><a href="../center-div/case-6.html">Caso 6</a></li>
+						</ul>
+					</li>
+					<li><span>Position</span>
+						<ul>
+							<li><a href="../position/case-7.html">Caso 7 - Position absolute/relative</a></li>
+							<li><a href="../position/case-8.html">Caso 8 - Position fixed</a></li>
+							<li><a href="../position/case-9.html">Caso 9 - Position + zindex</a></li>
+						</ul>
+					</li>
+					<li><a href="../margin-padding/case-10.html">Margin/padding</a></li>
+					<li><a href="../lists/case-11.html">Listas</a></li>
+				</ul>
+			</nav>
+		</div>
+	</body>
+	<script>
+	  var editor = CodeMirror.fromTextArea(document.getElementById("code1"), {
+	    lineNumbers: true,
+	    styleActiveLine: true,
+	    matchBrackets: true,
+	    readOnly: true,
+	    theme: 'pastel-on-dark'
+	  });
+	</script>
+</html>
